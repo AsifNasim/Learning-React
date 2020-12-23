@@ -7,14 +7,27 @@ import Hello from './component/Hello'
 import Welcome from './component/Welcome'
 
 import Message from './component/Message'
+import Counter from './component/Counter';
+import FunctionClicks from './component/FunctionClicks';
+import ClassClicks from './component/ClassClicks';
+import EventBind from './component/EventBind';
+import ParentComponent from './component/ParentComponent';
+
+
 
 
 class App extends Component{
   render(){
     return (
     <div className= "App">
-
-      <Message />
+      <ParentComponent />
+      {/* <EventBind /> */}
+        {/* <Counter /> */}
+        {/* <ClassClicks />
+        <Greet name = 'Asif' heroName = 'Full Stack Developer'></Greet>
+        <Welcome name = 'Nasim' heroName = 'Last Name'/>
+        <FunctionClicks /> */}
+      {/* <Message /> */}
       {/* <Greet></Greet> */}
        {/* WHEN WE DONT HAVE ANYTHING BETWEEN OPENING 
 //       AND CLOSING TAG THEN WE CAN ALSO WRITE
