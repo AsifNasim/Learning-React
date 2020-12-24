@@ -7,7 +7,8 @@ class Counter extends Component {
             count : 0
         }
     }
-
+// when you have to update state based on the previous state value, pass 
+// in a function as an argument instead of a regular object
     increament(){
         this.setState( (prevState, props) =>({
             count: prevState.count+1
@@ -35,8 +36,8 @@ class Counter extends Component {
         return (
             <div>
                 <h1>Count - {this.state.count}</h1>  
-                <button onClick = {() => {this.increament()}}>Increament</button>
-                <button onClick = {() => {this.increamentFive()}}>Increament</button>
+                <button onClick = {() => {this.increament()}}>Increament one </button>
+                <button onClick = {() => {this.increamentFive()}}>Increament Five</button>
             </div>
         )
     }

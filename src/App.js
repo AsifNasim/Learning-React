@@ -12,6 +12,15 @@ import FunctionClicks from './component/FunctionClicks';
 import ClassClicks from './component/ClassClicks';
 import EventBind from './component/EventBind';
 import ParentComponent from './component/ParentComponent';
+import UserGreeting from './component/UserGreeting';
+import NameList from './component/NameList';
+
+import StyleSheet from './component/StyleSheet'
+import Inline from './component/Inline';
+
+import './appStyle.css'
+
+import styles from './appStyle.module.css'
 
 
 
@@ -20,7 +29,15 @@ class App extends Component{
   render(){
     return (
     <div className= "App">
-      <ParentComponent />
+
+      <h1 className = 'error'>Error</h1>
+      <h1 className = {styles.success}>Success</h1>
+      < Inline />
+      {/* <StyleSheet primary ={true} /> */}
+
+      {/* <NameList /> */}
+      {/* <UserGreeting /> */}
+      {/* <ParentComponent /> */}
       {/* <EventBind /> */}
         {/* <Counter /> */}
         {/* <ClassClicks />
