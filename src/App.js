@@ -21,6 +21,8 @@ import Inline from './component/Inline';
 import './appStyle.css'
 
 import styles from './appStyle.module.css'
+import Forms from './component/Forms';
+import LifecycleA from './component/LifecycleA';
 
 
 
@@ -29,10 +31,11 @@ class App extends Component{
   render(){
     return (
     <div className= "App">
-
-      <h1 className = 'error'>Error</h1>
-      <h1 className = {styles.success}>Success</h1>
-      < Inline />
+      < LifecycleA />
+      <Forms/>
+      {/* <h1 className = 'error'>Error</h1> */}
+      {/* <h1 className = {styles.success}>Success</h1> */}
+      {/* < Inline /> */}
       {/* <StyleSheet primary ={true} /> */}
 
       {/* <NameList /> */}
