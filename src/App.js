@@ -1,7 +1,6 @@
 import './App.css';
 import Greet from './component/Greet'
 // import {myComponent} from './component/Greet'
-import { Component } from 'react';
 import Hello from './component/Hello'
 
 import Welcome from './component/Welcome'
@@ -23,6 +22,12 @@ import './appStyle.css'
 import styles from './appStyle.module.css'
 import Forms from './component/Forms';
 import LifecycleA from './component/LifecycleA';
+import FragmentDemo from './component/FragmentDemo';
+import Table from './component/Table';
+import { Component, PureComponent } from 'react';
+import PureComp from './component/PureComp';
+import ParentComp from './component/ParentComp';
+import RefsDemo from './component/RefsDemo';
 
 
 
@@ -31,8 +36,13 @@ class App extends Component{
   render(){
     return (
     <div className= "App">
-      < LifecycleA />
-      <Forms/>
+      < RefsDemo/>
+      {/* <ParentComp/> */}
+      {/* <PureComp/> */}
+      {/* <Table /> */}
+      {/* <FragmentDemo /> */}
+      {/* < LifecycleA /> */}
+      {/* <Forms/> */}
       {/* <h1 className = 'error'>Error</h1> */}
       {/* <h1 className = {styles.success}>Success</h1> */}
       {/* < Inline /> */}
