@@ -28,6 +28,11 @@ import { Component, PureComponent } from 'react';
 import PureComp from './component/PureComp';
 import ParentComp from './component/ParentComp';
 import RefsDemo from './component/RefsDemo';
+import RefsDemoOld from './component/RefsDemoOld'
+import FocusInput from './component/FocusInput';
+import FRParentInput from './component/FRParentInput';
+import FRInput from './component/FRInput';
+import PortalsDemo from './component/PortalsDemo';
 
 
 
@@ -36,7 +41,10 @@ class App extends Component{
   render(){
     return (
     <div className= "App">
-      < RefsDemo/>
+      <PortalsDemo />
+      {/* <FRInput/> */}
+      {/* < RefsDemoOld /> */}
+      {/* < RefsDemo/> */}
       {/* <ParentComp/> */}
       {/* <PureComp/> */}
       {/* <Table /> */}
